@@ -27,6 +27,7 @@ duplicates = []  # Return the list of duplicates in this data structure
 #             duplicates.append(name_1) 
 
 # STRETCH: second pass optimization with Binary Search
+# Run time using dict() and binary search tree travasal method has reduced the runtimee drastically
 
 check = dict()
 for name1 in names_1:
