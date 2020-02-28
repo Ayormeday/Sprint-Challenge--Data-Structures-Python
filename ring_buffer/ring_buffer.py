@@ -38,11 +38,11 @@ class RingBuffer:
 
 class ArrayRingBuffer:
     def __init__(self, capacity):
+        self.storage = RingBuffer(capacity)
       
-        pass
+       
     def append(self, item):
-    
-        pass
-    def get(self):
+        return self.storage.append(item)
         
-        pass
+    def get(self):
+        return self.storage.get()
