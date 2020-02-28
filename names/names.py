@@ -1,4 +1,4 @@
-from binary_search_tree import BinarySearchTree
+# from binary_search_tree import BinarySearchTree
 import time
 import sys
 
@@ -27,7 +27,8 @@ duplicates = []  # Return the list of duplicates in this data structure
 #             duplicates.append(name_1) 
 
 # STRETCH: second pass optimization with Binary Search
-# Run time using dict() and binary search tree travasal method has reduced the runtimee drastically
+
+# Run time using dict() and binary search tree travasal method has reduced the runtimee drastically but using in built dic() method is faster than implementing binary search
 
 check = dict()
 for name1 in names_1:
