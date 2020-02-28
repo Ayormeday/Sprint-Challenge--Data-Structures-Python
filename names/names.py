@@ -1,4 +1,6 @@
+from binary_search_tree import BinarySearchTree
 import time
+import sys
 
 start_time = time.time()
 
@@ -18,11 +20,21 @@ duplicates = []  # Return the list of duplicates in this data structure
 #         if name_1 == name_2:
 #             duplicates.append(name_1)
 
-#first pass optimization 
+# #first pass optimization 
 
-for name_1 in names_1:
-        if name_1 in names_2:
-            duplicates.append(name_1) 
+# for name_1 in names_1:
+#         if name_1 in names_2:
+#             duplicates.append(name_1) 
+
+# STRETCH: second pass optimization with Binary Search
+
+check = dict()
+for name1 in names_1:
+    check[name1] = True
+for name2 in names_2:
+    if name2 in check:
+        duplicates.append(name2)
+
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
